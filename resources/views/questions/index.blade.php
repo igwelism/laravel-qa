@@ -14,7 +14,8 @@
                         </div>
                     </div>
                     <div class="card-body">
-                       @foreach($questions as $question)
+                        @include('layouts._messages')
+                        @foreach($questions as $question)
                            <div class="media">
                                <div class="d-flex flex-column counters">
                                    <div class="vote">
@@ -38,7 +39,7 @@
                                </div>
                            </div>
                             <hr>
-                       @endforeach
+                        @endforeach
                         {{ $questions->links() }}
                     </div>
                 </div>
